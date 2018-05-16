@@ -43,9 +43,6 @@ public static function getNewsList()
 		}
 		
 		return $newslist;
-
-	
-
 }
 	
 }

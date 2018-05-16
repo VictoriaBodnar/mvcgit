@@ -44,7 +44,7 @@
  </head>
  <body>
   <div class="container">
-   <div class="header">News slate</div>
+   <div class="header"><?php echo $newsItem['title'];?></div>
    <div class="sidebar">
     <p><a href="#">Главная</a></p>
     <p><a href="#">Интервью</a></p>
@@ -52,14 +52,10 @@
    </div>
    <div class="content">
     <h2>View template run here!!</h2>
-
-<?php foreach ($newsList as $NewsItem):?>
 <div class="post">
-	<p><?php echo $NewsItem['title'];?></p>
-  <p><?php echo $NewsItem['date'];?></p>
-  <p><a href="/MVC/news/yy/<?php echo $NewsItem['id'];?>">Read more</a></p>
+	<p><?php echo $newsItem['short_content'];?></p>
+  <p><a href="/MVC/news/">Back to list</a></p>
 </div>
-<?php endforeach; ?>
 </div>
 <div class="footer">footer</div>
 </div>
